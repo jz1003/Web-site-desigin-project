@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  /* viewport for bootstrap */
+  /* stylesheets
+    <link rel="stylesheet" href="dr_base.css" />
+    <link rel="stylesheet" href="dr_layout2.css" />
+    */
+   <title>Template sample page</title>
+ </head>
+ 
+ <body>
+  <header>borrow from home page(navigation list)
+  <h1>Choose what works for you!</h1>
+  <p>More text</p>
+  </header>
+  
+  <section>
+    <table>
+    <thead></thead>
+    <tr>
+      <td colspan="2">Restaurants</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="Restaurant 1.png" alt="Rest 1" />
+        <img src="Restaurant 1 mobile.png" alt="Rest 1_m" />
+      </td>
+     </tr>
+  </section>
