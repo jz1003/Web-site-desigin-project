@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- viewport for bootstrap -->
+  <!-- stylesheets -->
+    <link rel="stylesheet" href="css_jz/Templates_page.css" />
+    <link href="bootstrap_jz/css/bootstrap.css" rel="stylesheet">
+  <script src="java_jz/java.js"></script>
+   <title >Template sample page</title>
+ </head>
+ 
+ <body>
+  <!-- shared header -->
+  <header>
+    <h1 class="text-center">Web Design Services</h1>
+    <div class="navbar1">
+      <a href="#home1">Home</a>
+       <div class="dropdown1">
+    <button class="dropbtn1">Templates
+      <i class="fa fa-caret-down1"></i>
+    </button>
+    <div class="dropdown-content1">
+      <a href="#">Restaurant</a>
+      <a href="#">Merchandise</a>
+      <a href="#">Campaign pages</a>
+      <a href="#">Personal Portfolios</a>
+    </div>
+
+  </div>
+
+      <div class="navbar1">
+       <div class="dropdown1">
+    <button class="dropbtn1">Designer
+      <i class="fa fa-caret-down1"></i>
+    </button>
+    <div class="dropdown-content1">
+      <a href="#">Designers by Specialties</a>
+      <a href="#">By Availability</a>
+      <a href="#">By Price</a>
+      <a href="#">By Reviews</a>
+    </div>
+  </div>
+      <a href="#contact" target="_blank">Contact</a>
+  </div>
+  </div>
+
+  <div >
+    <h2>Choose what works for you!</h2>
+    <p>We have templates for the four following industries. [More text]</p>
+    <button id="web">Web</button>
+    <button id="mobile">Mobile</button>
+   </div>
+  </header>
+  
+<!--     template samples as screenshots, can be replaced by gifs. Won't program actual templates for simplicity -->
+   <table>
+<!--     one template for each type -->
+      <thead>
+        <th class = "col-md-12 text-center" colspan="3">Solutions by industry</th>
+      </thead>
+
+      <tr class="wide">
+       <td class="col-md-4 "><img src="Restaurant 1.png" alt="Rest 1" class="img-responsive" onclick="openLB();showT(1)"></td>
+       <td class="col-md-4"><img src="Merch 1.png" alt="Merch 1"  class="img-responsive" onclick="openLB();showT(2)"></td>
+       <td class="col-md-4"><img src="camp 1.png" alt="camp 1"  class="img-responsive" onclick="openLB();showT(3)"></td>
+      </tr>
+      <tr class="wide">
+       <td class="col-md-4"><img src="pp 1.png" alt="pp 1"  class="img-responsive" onclick="openLB();showT(4)"></td>
+       <td class="col-md-4"><img src="event.png" alt="event 1"  class="img-responsive" onclick="openLB();showT(5)"></td>
+       <td class="col-md-4"><img src="Hotel.png" alt="hotel 1"  class="img-responsive" onclick="openLB();showT(6)"></td> 
+      </tr>
+
+      <tr class="narr">
+       <td class="col-md-4"><img src="Restaurant 1 mobile.png" alt="Rest 1"  class="img-responsive"  onclick="openLBm();showTm(1)"></td>
+       <td class="col-md-4"><img src="Merch 1 m.png" alt="Merch 1" class="img-responsive"  onclick="openLBm();showTm(2)"></td>
+       <td class="col-md-4"><img src="camp 1 m.png" alt="camp 1"  class="img-responsive"  onclick="openLBm();showTm(3)"></td>
+      </tr>
+      <tr  class="narr">
+       <td class="col-md-4"><img src="pp 1 m.png" alt="pp 1"  class="img-responsive"  onclick="openLBm();showTm(4)"></td>
+       <td class="col-md-4"><img src="event m.png" alt="event 1"  class="img-responsive"  onclick="openLBm();showTm(5)"></td>
+       <td class="col-md-4"><img src="hotel m.png" alt="hotel 1"  class="img-responsive"  onclick="openLBm();showTm(6)"></td> 
+      </tr>
+
+   </table>
+
+   <!-- add lightbox -->
+       <!-- lightbox for webviews -->
+   <div id="lbox" class="modal">                                                              
+    <div class="modal-header ">
+     <span class="close" onclick="closeLB()">&times;</span>  <!-- change class name -->
+    </div>
+    <div class="modal-content">                                                        
+     <div  class="templates"> <img src="Restaurant 1.png" alt="Rest 1" style="width: 100%;"></div>
+     <div  class="templates"> <img src="Merch 1.png" alt="Merch 1" style="width: 100%;"></div>
+     <div  class="templates"> <img src="camp 1.png" alt="Camp 1" style="width: 100%;"></div>
+    </div>
+    <div class="modal-content">
+     <div  class="templates"> <img src="pp 1.png" alt="PP 1" style="width: 100%;"></div>
+     <div  class="templates"> <img src="event.png" alt="event 1" style="width: 100%;"></div>
+     <div  class="templates"> <img src="Hotel.png" alt="hotel 1" style="width: 100%;"></div>
+    </div>
+   </div>
+
+   <div id="lboxm" class="modalm">                                                              
+    <div class="modal-header ">
+     <span class="close" onclick="closeLBm()">&times;</span>  <!-- change class name -->
+    </div>
+    <div class="modal-contentm">                                                        
+     <div  class="templatesm"> <img src="Restaurant 1 mobile.png" alt="Rest 1" style="width: 100%;"></div>
+     <div  class="templatesm"> <img src="Merch 1 m.png" alt="merch 1" style="width: 100%;"></div>
+     <div  class="templatesm"> <img src="camp 1 m.png" alt="camp 1" style="width: 100%;"></div>
+    </div>
+    <div class="modal-contentm">
+     <div  class="templatesm"> <img src="pp 1 m.png" alt="pp 1" style="width: 100%;"></div>
+     <div  class="templatesm"> <img src="event m.png" alt="event 1" style="width: 100%;"></div>
+     <div  class="templatesm"> <img src="hotel m.png" alt="hotel 1" style="width: 100%;"></div>
+    </div>
+   </div>
+
+  </body>
+
+  <footer></footer>
+</html>
