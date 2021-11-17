@@ -14,8 +14,8 @@ window.onload = init;
 //    //    return false;
 //    // }
    
-document.getElementById("web").onclick = turnOnWeb;
-document.getElementById("mobile").onclick=turnOnMobile;
+document.getElementById("web").onclick = turnOnWeb();
+document.getElementById("mobile").onclick=turnOnMobile();
 // }
 
 function turnOnWeb() {
