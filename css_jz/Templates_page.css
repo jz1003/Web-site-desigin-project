@@ -68,9 +68,10 @@ textarea {
 }
 
 /* The dropdown container */
-.dropdown1 {
+.navbar1 .dropdown1 {
   float: left;
   overflow: hidden;
+
 }
 /*.dropdown2 {
   float: left;
@@ -78,7 +79,7 @@ textarea {
 }*/
 
 /* Dropdown button */
-.dropdown1 .dropbtn1 {
+ .dropdown1 .dropbtn1 {
   font-size: 16px;
   border: none;
   outline: none;
@@ -87,6 +88,7 @@ textarea {
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+
 }
 
 /* Add a red background color to navbar links on hover */
@@ -157,6 +159,26 @@ textarea {
       li a:hover {
         background-color:#e06155;
       }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropbtn1 .fa {
+    padding: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
 
 /* Facebook */
 .fa-facebook {
